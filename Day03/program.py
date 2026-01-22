@@ -2,8 +2,8 @@ import sys
 import time
 import array
 
-title = "## Day 2: Corruption Checksum ##"
-url = "https://adventofcode.com/2017/day/2"
+title = "## Day 3: Spiral Memory ##"
+url = "https://adventofcode.com/2017/day/3"
 expectedResultPart1 = 371
 expectedResultPart2 = 369601
 
