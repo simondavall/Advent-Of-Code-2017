@@ -1,5 +1,5 @@
 import sys
-import array
+import time
 
 title = "## Day 1: Inverse Captcha ##"
 url = "https://adventofcode.com/2017/day/1"
@@ -39,11 +39,17 @@ for filePath in sys.argv[1:]:
     with open(filePath, 'r') as file:
         input = file.read()
 
+    start = time.perf_counter()
     resultPartOne = partOne(input);
-    print(f"Part 1 Result: {resultPartOne} in 0ms");
+    end = time.perf_counter()
+    elapsed_ms = (end - start) * 1000
+    print(f"Part 1 Result: {resultPartOne} in {elapsed_ms:.3f}ms");
 
+    start = time.perf_counter()
     resultPartTwo = partTwo(input);
-    print(f"Part 2 Result: {resultPartTwo} in 0ms");
+    end = time.perf_counter()
+    elapsed_ms = (end - start) * 1000
+    print(f"Part 2 Result: {resultPartTwo} in {elapsed_ms:.3f}ms");
 
 if (resultPartOne != expectedResultPart1 or resultPartTwo != expectedResultPart2):
         sys.exit(1)
