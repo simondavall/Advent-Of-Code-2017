@@ -1,0 +1,6 @@
+INPUTS=sample.txt sample1.txt sample2.txt input.txt
+
+.PHONY: test
+
+test: program.py $(INPUTS)
+	python3.14 program.py $(INPUTS)
