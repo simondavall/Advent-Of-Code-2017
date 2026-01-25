@@ -3,8 +3,8 @@ import time
 
 title = "## Day 15: Dueling Generators ##"
 url = "https://adventofcode.com/2017/day/15"
-expectedResultPart1 = 0
-expectedResultPart2 = 0
+expectedResultPart1 = 594
+expectedResultPart2 = 328
 
 def processInput(input):
     return []
