@@ -2,9 +2,9 @@
 https://adventofcode.com/2017/day/11
 
 File: sample.txt\
-Part 1 Result: 3 in 0.023ms\
-Part 2 Result: 3 in 0.009ms
+Part 1 Result: 3 in 0.018ms\
+Part 2 Result: 3 in 0.021ms
 
 File: input.txt\
-Part 1 Result: 743 in 3.945ms\
-Part 2 Result: 1493 in 8.172ms
+Part 1 Result: 743 in 14.454ms\
+Part 2 Result: 1493 in 33.702ms

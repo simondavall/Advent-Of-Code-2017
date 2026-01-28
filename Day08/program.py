@@ -8,21 +8,20 @@ expectedResultPart1 = 6012
 expectedResultPart2 = 6369
 
 def condition_satisfied(operator, a, b):
-    match operator:
-        case "<":
-            return a < b
-        case ">":
-            return a > b
-        case "==":
-            return a == b
-        case "!=":
-            return a != b
-        case ">=":
-            return a >= b
-        case "<=":
-            return a <= b
-        case _:
-            assert False, f"Unknown operator {operator}"
+    if operator == "<":
+        return a < b
+    elif operator == ">":
+        return a > b
+    elif operator == "==":
+        return a == b
+    elif operator == "!=":
+        return a != b
+    elif operator == ">=":
+        return a >= b
+    elif operator == "<=":
+        return a <= b
+    else:
+        assert False, f"Unknown operator {operator}"
 
 def setValues(match):
     return match.group(1), match.group(2), int(match.group(3)),\

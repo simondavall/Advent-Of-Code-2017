@@ -19,8 +19,8 @@ for day in range(1, total_solutions + 1):
         print(result.stdout)
     else:
         failed.append(day)
-        print("Script failed:")
-        print(result.stderr) 
+        print(result.stdout) 
+        print("Solution failed !!")
 
 end = time.perf_counter()
 elapsed_s = (end - start)

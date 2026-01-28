@@ -3,8 +3,8 @@ import time
 
 title = "## Day 23: Coprocessor Conflagration ##"
 url = "https://adventofcode.com/2017/day/23"
-expectedResultPart1 = 0
-expectedResultPart2 = 0
+expectedResultPart1 = 6724
+expectedResultPart2 = 903
 
 class Instruction:
     def __init__(self, op, x, x_mode, y=None, y_mode=True):

@@ -7,14 +7,13 @@ expectedResultPart1 = 743
 expectedResultPart2 = 1493
 
 def move(direction):
-    match direction:
-        case "n": return (0, -2)
-        case "s": return (0, 2)
-        case "se": return (2, 1)
-        case "sw": return (-2, 1)
-        case "ne": return (2, -1)
-        case "nw": return (-2, -1)
-        case _: assert False, f"Unknown direction '{direction}'"
+        if direction == "n": return (0, -2)
+        elif direction == "s": return (0, 2)
+        elif direction == "se": return (2, 1)
+        elif direction == "sw": return (-2, 1)
+        elif direction == "ne": return (2, -1)
+        elif direction == "nw": return (-2, -1)
+        else: assert False, f"Unknown direction '{direction}'"
 
 def distance_from_origin(x, y):
     (x ,y) = (abs(x), abs(y))
